@@ -1,0 +1,138 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background dengan gradasi warna */
+body {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container utama */
+.container {
+    width: 45%;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.container:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul halaman */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Label */
+label {
+    display: block;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Input field */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4ca1af;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(76, 161, 175, 0.5);
+}
+
+/* Tombol Simpan */
+button {
+    width: 100%;
+    background: #4ca1af;
+    color: white;
+    padding: 12px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3b8591;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Pesan sukses & error */
+p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+p.success {
+    color: #28a745;
+}
+
+p.error {
+    color: #e74c3c;
+}
+
+/* Link kembali ke dashboard */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: #4ca1af;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    background: #3b8591;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Efek Responsif */
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 25px;
+    }
+}

@@ -1,0 +1,140 @@
+/* Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #00C8FF, #0072ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Tidak bisa discroll saat loading */
+}
+
+/* Container Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Box untuk Form Login */
+.login-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transform: scale(0.95);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Animasi FadeIn */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Heading */
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #00C8FF;
+    background-color: #333;
+}
+
+/* Tombol Submit */
+button[type="submit"] {
+    background-color: #00C8FF;
+    color: white;
+    padding: 15px 0;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #0072ff;
+    transform: scale(1.05);
+}
+
+/* Footer (Link untuk Register) */
+.footer {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #00C8FF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0072ff;
+}
+
+.error-message {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* Responsif untuk tampilan kecil */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px;
+        width: 90%;
+    }
+}
