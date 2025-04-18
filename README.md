@@ -58,7 +58,7 @@ A powerful and simple web-based To-Do List application built using **HTML, CSS, 
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/clementhermawan/todo-list-app.git
+git clone https://github.com/clementhermawan/Website-ToDoList.git
 ```
 
 ### 2. Import the database
